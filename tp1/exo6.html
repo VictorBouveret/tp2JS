@@ -1,0 +1,48 @@
+<html lang="fr">
+    <head>
+        <meta HTTP-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>TP1</title>    
+    </head>
+
+    <body>
+
+        <button onclick="calculerMoyenne()">Moyenne</button>
+
+        <button onclick="calculerMoyenneInfinie()">Moyenne infinie jusqu'au 0</button>
+
+        <script>
+
+                function calculerMoyenneInfinie() {
+                    var sum = 0;
+                    var cpt = 0;
+
+                    while(true) {
+                        let nombre = parseInt(prompt("saisir un nombre"));
+                        if(nombre == 0){
+                            break;
+                        }
+                        ++cpt;
+                        sum += nombre;
+                    }
+
+                    alert(sum / cpt);     
+                }
+
+                function calculerMoyenne() {
+                    var somme = 0;
+                    var compteur = 0;
+
+                    for (let i = 0; i < 10; ++i) {
+                        let nb = prompt("saisir un nombre");
+                        ++compteur;
+                        somme += parseInt(nb);
+                    }
+
+                    alert(somme / compteur)
+                }
+                
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,26 @@
+<html lang="fr">
+    <head>
+        <meta HTTP-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>TP1</title>    
+    </head>
+
+    <body>
+
+        <button onclick="aireDesCercle()"> Calculer l'aire</button>
+
+        <script>
+                var rayon1 = 5;
+                var rayon2 = 10;
+                const pi = 3.14;
+
+                function aireDesCercle(){
+                    alert("le rayon du cercle 1 est de " + rayon1 + " centimètres.\n" + "le rayon du cercle 2 est de " + rayon2 + " centimètres. \n" +
+                          "l'aire du premier cercle est de " + rayon1 * rayon1 * pi + " centimètres carré.\n" + "l'aire du deuxième cercle est de " + rayon2 * rayon2 * pi + " centimètres carré. \n" + 
+                          "la différence entre les deux surfaces est de " + ((rayon2 * rayon2 * pi) - (rayon1 * rayon1 * pi))  + " centimètres carrés.");
+                } 
+                
+        </script>
+
+    </body>
+
+</html>

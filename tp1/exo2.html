@@ -1,0 +1,24 @@
+<html lang="fr">
+    <head>
+        <meta HTTP-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>TP1</title>    
+    </head>
+
+    <body>
+
+        <button onclick="recupereLesInitiales()">Récuperer mes initiales</button>
+
+        <script>
+            
+
+                function recupereLesInitiales(){
+                    var prenom = prompt("Saisissez votre prénom ici");
+                    var nom = prompt("Saisissez votre nom ici");
+                    alert("vos initiales sont : " + prenom[0] + nom [0] + "\nVotre prénom plus votre nom contient "+ (prenom.length + nom.length) + " lettres.");
+                }
+                
+        </script>
+
+    </body>
+
+</html>

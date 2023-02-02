@@ -1,0 +1,29 @@
+<html lang="fr">
+    <head>
+        <meta HTTP-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>TP1</title>    
+    </head>
+
+    <body>
+
+        <button onclick="compterLesPairs()">Compter nombres pairs</button>
+
+        <script>
+
+                function compterLesPairs(){
+                    var liste = [2,8,6,9,3,1,4,7]
+                    var cpf = 0;
+
+                    for(let i = 0; i < liste.length; ++i) {
+                        if((liste[i] %2) == 0) {
+                            ++cpf;
+                        }
+                    }
+                    alert("il y a " + cpf + " nombres pairs.");
+                }
+                
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+<html lang="fr">
+    <head>
+        <meta HTTP-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>TP1</title>    
+    </head>
+
+    <body>
+
+        <button onclick="compterVoyelles()">Compter Voyelles</button>
+
+        <script>
+
+                function compterVoyelles(){
+                    var chaine = prompt("saisissez votre phrase ou votre mot");
+                    var voyelles = ['a','e','i','o','u','y'];
+                    totalvoyelles = 0;
+
+                    for (let i = 0; i < chaine.length; ++i) {
+                        for (let j = 0; j < voyelles.length; ++j) {
+                            if(chaine[i] == voyelles[j]){
+                                totalvoyelles++;
+                            }
+                        }
+                    }
+                    alert("Le nombre de voyelles total dans votre mot est de " + totalvoyelles + "\nle nombre d'occurences total est de " + chaine.length +
+                          "\nle nombre total de voyelles est de " + totalvoyelles + "\n le nombre d'occurences externe est de " + (chaine.length - totalvoyelles));
+                }
+
+        </script>
+
+    </body>
+
+</html>
